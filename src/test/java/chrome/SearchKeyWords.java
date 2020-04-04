@@ -79,7 +79,6 @@ public class SearchKeyWords {
 		
 		driver.quit();
 		
-		System.out.println(" Last Word ! ");
 		
 	}
 
