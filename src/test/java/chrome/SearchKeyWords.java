@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SearchKeyWords {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		System.setProperty("webdriver.chrome.driver", "/Users/fehmibaltaci/Downloads/chromedriver.exe");
 
@@ -74,6 +74,13 @@ public class SearchKeyWords {
 		System.out.println("Count of pen in the page -->  " + penCount);
 		
 		System.out.println("Count of all words in the page -->  " + wordsInTheList.length);
+		
+		Thread.sleep(5000);
+		
+		driver.quit();
+		
+		System.out.println(" Last Word ! ");
+		
 	}
 
 }
